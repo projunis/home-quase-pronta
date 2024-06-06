@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>amarElo</title>
+
+    <!-- LINK CARROSSEL DEPOIMENTOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+    <!-- ASPAS DE CITAÇÃO -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- LOGO -->
+            <div class="flex">
+                <a href="#"><img src="img/logo.png" width="70px"></a>
+            </div>
+            <a class="logo-nome" href="/">amarElo</a>
+            <!-- BOTÃO DE OPÇÕES APARECENDO QUANDO A JANELA É DIMINUIDA -->
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <!-- ITENS DO MENU NAVEGAÇÃO -->
+            </div>
+            <ul class="nav-list">
+                <li><a href="/">Início</a></li>
+                <li><a href="/">Quem somos</a></li>
+                <li><a href="/">Parceiros</a></li>
+                <li><a href="/">Faça parte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cabecalho">
+            <h2>SEJA BEM VINDO</h2>
+            <p>Não devemos ser o produto das nossas circunstâncias, mas sim o resultado das nossas decisões. Para hoje,
+                escolha cuidar mais de você.</p>
+            <a href="#"><button>Encontrar ajuda</button></a>
+        </div>
+    </main>
+    <section class="depoimento-area">
+        <div class="conteudo">
+            <div class="seg-titulo">
+                <h2>Você não está sozinho...</h2>
+            </div>
+            <div class="testimonial-content owl-carousel">
+                <div class="depoimento-unico">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.</p>
+                    <div class="pessoa-info">
+                        <div class="pessoa-foto">
+                            <img src="img/account (64).png">
+                        </div>
+                        <div class="pessoa-detalhe">
+                            <h6>Ronald McDonald</h6>
+                            <span>Rio de Janeiro, RJ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento-unico">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.</p>
+                    <div class="pessoa-info">
+                        <div class="pessoa-foto">
+                            <img src="img/account (64).png">
+                        </div>
+                        <div class="pessoa-detalhe">
+                            <h6>Ronald McDonald</h6>
+                            <span>Rio de Janeiro, RJ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento-unico">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.</p>
+                    <div class="pessoa-info">
+                        <div class="pessoa-foto">
+                            <img src="img/account (64).png">
+                        </div>
+                        <div class="pessoa-detalhe">
+                            <h6>Ronald McDonald</h6>
+                            <span>Rio de Janeiro, RJ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="ligue">
+        <p>Em caso de emergência ou se você precisar de apoio imediato, por favor, ligue:</p>
+    </div>
+    <!-- TELEFONES DE URGENCIA -->
+
+    <div class="num-urgencia" >
+        <div>
+            <ul>
+                <li class="emergencia-num">188</li>
+                <li class="emergencia-nome">CVV</li>
+                <p class="explicacao">Se você ou alguém que você conhece está tendo pensamentos suícidas e precisa conversar.</p>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="emergencia-num">190</li>
+                <li class="emergencia-nome">POLÍCIA</li>
+                <p class="explicacao">Se a situação envolver perigo iminente de violência ou a necessidade de uma intervenção policial.</p>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="emergencia-num">192</li>
+                <li class="emergencia-nome">SAMU</li>
+                <p class="explicacao">Em casos de tentativa de suicídio, especialmente se a pessoa estiver em perigo imediato ou inconsciente.</p>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="emergencia-num">193</li>
+                <li class="emergencia-nome">BOMBEIROS</li>
+                <p class="explicacao">Tentativa de suicídio em locais de difícil acesso, com uso de substâncias perigosas.</p>
+            </ul>
+        </div>
+    </div>
+
+    <!-- USANDO CDN LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.testimonial-content').owlCarousel({
+            loop:true,
+            nav:false,
+            dots:true,
+            margin:50,
+            autoplay:true,
+            autoplayTimeout:4000,
+            smartSpeed:800,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:2
+                }
+            }
+        })
+        })
+    </script>
+    <!-- FIM DO CDN LINK -->
+    
+    <script src="mobile-navbar.js"></script>
+</body>
+
+</html>
